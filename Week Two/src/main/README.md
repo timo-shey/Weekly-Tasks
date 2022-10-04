@@ -1,6 +1,6 @@
-##READ PRODUCT DATA FROM A SRC FILE
+## READ PRODUCT DATA FROM A SRC FILE
 
-###Problem Description
+### Problem Description
 
 Continuing from the store task, you are to read data from a csv file and create an array of product objects for your store. Products should be categorized for easy access by the cashier and customers. Product out of stock should have a value of “OUT OF STOCK” to prevent the purchase of products that are not available
 
