@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/Users/timileyin/IdeaProjects/ConvenienceStore</OriginalElement>
+  <nodes>
+    <node x="-136.0" y="628.0">Model.Product</node>
+    <node x="382.0" y="1276.0">Test.ConvenienceStoreTest</node>
+    <node x="-136.0" y="974.0">Model.ConvenienceStore</node>
+    <node x="141.0" y="974.0">Interface.CustomerService</node>
+    <node x="-136.0" y="1276.0">Model.ShoppingCart</node>
+    <node x="988.0" y="974.0">Interface.ApplicationService</node>
+    <node x="951.0" y="1276.0">Test.ManagerTest</node>
+    <node x="42.32692307692298" y="291.0">Model.Staff</node>
+    <node x="671.0" y="753.0">Impl.CashierServiceImpl</node>
+    <node x="-136.0" y="508.0">Model.Cashier</node>
+    <node x="740.0" y="1276.0">Main</node>
+    <node x="203.99999999999994" y="519.0">Model.Manager</node>
+    <node x="139.0" y="1276.0">CustomException.UsageException</node>
+    <node x="609.0" y="1077.0">Impl.ManagerServiceImpl</node>
+    <node x="399.7499999999999" y="-14.0">Model.Person</node>
+    <node x="184.0" y="628.0">Interface.ConvenienceStoreService</node>
+    <node x="141.0" y="1077.0">Impl.CustomerServiceImpl</node>
+    <node x="171.0" y="753.0">Impl.ConvenienceStoreServiceImpl</node>
+    <node x="365.326923076923" y="302.0">Model.Customer</node>
+    <node x="701.326923076923" y="324.0">Model.Applicant</node>
+    <node x="679.0" y="628.0">Interface.CashierService</node>
+    <node x="609.0" y="974.0">Interface.ManagerService</node>
+    <node x="988.0" y="1077.0">Impl.ApplicationServiceImpl</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Model.Manager" target="Model.Staff" relationship="GENERALIZATION">
+      <point x="0.0" y="-26.5" />
+      <point x="367.49999999999994" y="483.0" />
+      <point x="193.82692307692298" y="483.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="Model.Applicant" target="Model.Person" relationship="GENERALIZATION">
+      <point x="0.0" y="-50.5" />
+      <point x="877.826923076923" y="266.0" />
+      <point x="525.2499999999999" y="266.0" />
+      <point x="0.0" y="127.5" />
+    </edge>
+    <edge source="Impl.ManagerServiceImpl" target="Interface.ManagerService" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="Impl.CustomerServiceImpl" target="Interface.CustomerService" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="Model.Staff" target="Model.Person" relationship="GENERALIZATION">
+      <point x="0.0" y="-83.5" />
+      <point x="193.82692307692298" y="266.0" />
+      <point x="525.2499999999999" y="266.0" />
+      <point x="0.0" y="127.5" />
+    </edge>
+    <edge source="Impl.ConvenienceStoreServiceImpl" target="Interface.ConvenienceStoreService" relationship="REALIZATION">
+      <point x="0.0" y="-82.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="Model.Customer" target="Model.Person" relationship="GENERALIZATION">
+      <point x="0.0" y="-72.5" />
+      <point x="523.326923076923" y="266.0" />
+      <point x="525.2499999999999" y="266.0" />
+      <point x="0.0" y="127.5" />
+    </edge>
+    <edge source="Impl.ApplicationServiceImpl" target="Interface.ApplicationService" relationship="REALIZATION">
+      <point x="0.0" y="-38.5" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="Impl.CashierServiceImpl" target="Interface.CashierService" relationship="REALIZATION">
+      <point x="0.0" y="-71.5" />
+      <point x="0.0" y="37.5" />
+    </edge>
+    <edge source="Model.Cashier" target="Model.Staff" relationship="GENERALIZATION">
+      <point x="-5.6843418860808015E-14" y="-37.5" />
+      <point x="23.999999999999943" y="483.0" />
+      <point x="193.82692307692298" y="483.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.5388316151202749" showDependencies="false" x="584.5000000000001" y="713.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
