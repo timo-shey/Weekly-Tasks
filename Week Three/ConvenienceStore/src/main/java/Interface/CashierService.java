@@ -9,7 +9,6 @@ import Model.Staff;
 import java.util.Queue;
 
 public interface CashierService {
-
     String issueReceipt(ConvenienceStore convenienceStore, Customer customer, Staff staff);
 
 }

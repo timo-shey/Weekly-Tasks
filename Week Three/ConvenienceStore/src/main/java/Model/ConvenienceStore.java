@@ -15,8 +15,6 @@ public class ConvenienceStore {
     private List<Staff> staff;
     private List<Applicant> applicants;
     private String storeName;
-    private static Queue<Customer> priorityQueue = new PriorityQueue<>();
-    private static Queue<Customer> queue = new LinkedList<>();
 
 
     public ConvenienceStore(String storeName) {
@@ -47,14 +45,11 @@ public class ConvenienceStore {
 
     public void setApplicants(List<Applicant> applicants) { this.applicants = applicants; }
 
-    public static Queue<Customer> getPriorityQueue() { return priorityQueue; }
-
-    public static Queue<Customer> getQueue() { return queue; }
-
     String path = "/Users/timileyin/IdeaProjects/ConvenienceStore/src/ConvenienceStore.csv";
 
-    public void addProducts(String path) {
+    public void addProducts(String path) throws IOException {
         List<Product> allProducts = getProductList();
+        BufferedReader reader = null;
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))){
             String line;
@@ -68,10 +63,6 @@ public class ConvenienceStore {
                 String name = row[2];
                 int quantity = Integer.parseInt(row[3]);
                 Product product = new Product(category, price, name, quantity);
-                for (String index : row) {
-                    System.out.printf("%-17s", index);
-                }
-                System.out.println();
                 allProducts.add(product);
             }
         } catch (Exception e) {
