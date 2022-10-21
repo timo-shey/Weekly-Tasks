@@ -1,26 +1,26 @@
-import CustomException.UsageException;
 import Impl.*;
-import Interface.*;
 import Model.*;
-import Model.Comparator;
-import jdk.dynalink.linker.ConversionComparator;
+import Comparator.Comparator;
 
 import java.io.IOException;
 import java.util.*;
 
 public class Main {
-    public static void main(String[] args) throws UsageException, IOException {
+    public static void main(String[] args) throws IOException {
 
         String path = "/Users/timileyin/IdeaProjects/ConvenienceStore/ConvenienceStore.csv";
         ConvenienceStore store = new ConvenienceStore("DigiStores");
-        ConvenienceStoreService convenienceStoreService = new ConvenienceStoreServiceImpl();
         store.addProducts(path);
-        System.out.println("List of products: " + store.getProductList());
+        System.out.println(ConvenienceStore.getProductList());
 
-        Product Bournvita = new Product("Beverage", 1000.0, "Bournvita", 10);
-        Product Microwave = new Product("Electronics", 1500.0, "Microwave", 10);
-        Product LegoBricks = new Product("Toys", 2000.0, "Lego Bricks", 10);
-        Product BagOfRice = new Product("Foodstuff", 2500.0, "Bag of Rice", 10);
+        Product Bournvita = new Product("Beverage", 1000.0, "Bournvita"
+                , 10);
+        Product Microwave = new Product("Electronics", 1500.0, "Microwave"
+                , 10);
+        Product LegoBricks = new Product("Toys", 2000.0, "Lego Bricks"
+                , 10);
+        Product BagOfRice = new Product("Foodstuff", 2500.0, "Bag of Rice"
+                , 10);
 
         Customer customer = new Customer("Peter", "Griffin", "Male", 24, 50000);
         Customer customer2 = new Customer("John", "Griffin", "Male", 25, 50000);
@@ -28,7 +28,7 @@ public class Main {
         Customer customer4 = new Customer("Andrew", "Griffin", "Male", 26, 15000);
 
         CustomerServiceImpl customerAction = new CustomerServiceImpl();
-        customerAction.addToCart(customer, Bournvita);
+        customerAction.addToCart(customer, Bournvita, Microwave, BagOfRice);
         customerAction.addToCart(customer2, Microwave, BagOfRice, BagOfRice, LegoBricks);
         customerAction.addToCart(customer3, LegoBricks, Microwave);
         customerAction.addToCart(customer4, BagOfRice, Microwave, Bournvita);
