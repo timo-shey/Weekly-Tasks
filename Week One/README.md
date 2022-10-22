@@ -1,6 +1,6 @@
 # CONVENIENCE-STORE-MODEL---WEEK-ONE
 
-### Problem Description
+## Problem Description
 
 You are to model a convenience store using OOP
 
