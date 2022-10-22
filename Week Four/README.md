@@ -1,43 +1,43 @@
-#STORE SALES AND MANAGEMENT (MULTI-THREADED STORE)
+# STORE SALES AND MANAGEMENT (MULTI-THREADED STORE)
 
-##Problem Description
+## Problem Description
 
 Use your understanding of threads and concurrency to implement sales and purchases in your store application, allowing multiple customers to purchase products from your store. Prevent various problems associated with multi-threading such as race conditions, deadlock,
 
 How will I complete this project?
 
-  1. Write automated test
+    1. Write automated test
   
-  2. Organize the folders for your module (application), to house both your codebase and the tests.
+    2. Organize the folders for your module (application), to house both your codebase and the tests.
 
-  3. Write tests to cover all the methods to be written before development begins (TDD (Test Driven Development)).
+    3. Write tests to cover all the methods to be written before development begins (TDD (Test Driven Development)).
 
-  4. Make logical assumptions where necessary.
+    4. Make logical assumptions where necessary.
 
 Steps to evaluate.
 
-  5. Classes
+    5. Classes
 
-    a. At Minimum
+      a. At Minimum
 
-      i. UML should be used.
+        i. UML should be used.
 
-      ii. The right visibility modifiers should be used.
+        ii. The right visibility modifiers should be used.
 
-      iii. The code should show understanding of multi-threading by efficiently avoiding deadlocks.
+        iii. The code should show understanding of multi-threading by efficiently avoiding deadlocks.
 
-      iv. The following concepts should be effectively used;
+        iv. The following concepts should be effectively used;
 
-        · Composition
+          · Composition
 
-        · Generics
+          · Generics
 
-        · Collections
+          · Collections
 
-        · Exception Handling
+          · Exception Handling
         
-  6. Test Coverage
+    6. Test Coverage
 
-    b. At Minimum
+      b. At Minimum
 
-      v. The tests should cover the methods as well as the conditions/procedures that the methods employ.
+        v. The tests should cover the methods as well as the conditions/procedures that the methods employ.
