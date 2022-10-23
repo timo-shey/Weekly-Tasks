@@ -34,12 +34,12 @@ public class Client {
             try {
                 while (true) {
                     String msg = br.readLine();
-                    if (msg.equals("exit")) {
-                        System.out.println(ANSI_RED + "Server has terminated the chat.");
+                    if (msg.equals("End")) {
+                        System.out.println(ANSI_RED + "Server has terminated the chat!");
                         socket.close();
                         break;
                     }
-                    System.out.println(ANSI_PURPLE + ANSI_BOLD + "Server: " + msg);
+                    System.out.println(ANSI_YELLOW + "Server: " + msg);
                 }
             }catch (Exception e){
                 System.exit(0);
@@ -56,7 +56,7 @@ public class Client {
                     String content = br1.readLine();
                     out.println(content);
                     out.flush();
-                    if (content.equals("exit")){
+                    if (content.equals("End")){
                         socket.close();
                         break;
                     }

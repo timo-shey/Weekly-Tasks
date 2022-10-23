@@ -37,18 +37,17 @@ public class Server {
             try {
                 while (true) {
                     String msg = br.readLine();
-                    if (msg.equals("exit")) {
-                        System.out.println(ANSI_RED + "Client has terminated the chat.");
+                    if (msg.equals("End")) {
+                        System.out.println(ANSI_RED + "Client has terminated the chat!");
                         socket.close();
                         break;
                     }
-                    System.out.println(ANSI_CYAN + ANSI_BOLD + "Client: " + msg);
+                    System.out.println(ANSI_YELLOW + "Client: " + msg);
                 }
             }catch (Exception e){
                 System.exit(0);
             }
         };
-
         new Thread(r1).start();
     }
 
@@ -60,7 +59,7 @@ public class Server {
                     String content = br1.readLine();
                     out.println(content);
                     out.flush();
-                    if (content.equals("exit")){
+                    if (content.equals("End")){
                         socket.close();
                         break;
                     }
